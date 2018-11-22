@@ -1,0 +1,92 @@
+body {
+    background: maroon;
+    color: antiquewhite;
+}
+
+p#date {
+    width: 15%;
+    height: 60px;
+    text-align: right;
+    color: white;
+    word-spacing: 3px;
+    padding: 10px 3px 6px 20px;
+    background: black;
+    border-style: dashed solid;
+    border-color: gray;
+    border-width: 5px;
+    margin: auto;
+    z-index: 1;
+    position: fixed;
+    left: 80%;
+}
+
+
+
+p.tips{
+    width: 300px;
+    height: 300px;
+    line-height: normal;
+    text-align: center;
+    color: aqua;
+    word-spacing: 3px;
+    padding: 10px 3px 6px 20px;
+    background: blue;
+    border-style: dashed solid;
+    border-color: lightblue;
+    border-width: 5px;
+    margin: auto;
+}
+
+#d {
+    float: left;
+    width: 90%;
+    padding: auto;
+    padding-top: 20px;
+    background-color: fuchsia;
+    border-style: solid dashed;
+    border-width: 5px;
+    margin-left: 5%;
+    margin-bottom: 50px;
+    margin-top:50px;
+    
+    text-align: center;
+}
+
+.container{
+    width:300px;
+    margin: 0 4%;
+}
+
+
+ul {
+    float: left;
+    width: 100%;
+    margin: 0;
+    list-style-type: none;
+    border-style: dashed solid;
+    padding: 0;
+    padding-left: 10px;
+    margin-bottom: 20px;
+
+}
+li{
+    float: left;
+    width: 10%;
+    text-align: center;
+}
+a{
+    display: block;
+}
+
+a:hover,
+a:active {
+    background-color: aqua;
+    color: brown;
+    display: block;
+}
+
+canvas{
+    width:95%;
+    height:5%;
+    margin: 2.5%;
+}

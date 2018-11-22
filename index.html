@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel='stylesheet' type="text/css" href="style.css" />
+</head>
+
+<body>
+    <ul>
+        <li><a>主页</a></li>
+        <li><a>作品集</a></li>
+        <li><a>随笔</a></li>
+        <li><a>兴趣</a></li>
+    </ul>
+    <div>
+        <p id="date">
+            <mark>2018</mark>年<mark>11</mark>月<mark>21</mark>日<br>
+            <big>张逸泽</big>
+        </p>
+    </div>
+
+
+    <div id="d">
+        <div class="container" style="float: left;">
+            <img src="894.jpg" style="width: 300px;float: left;margin: auto;">
+            <p>物语系列真tm好看</p>
+        </div>
+        <div class="container" style="float: left;">
+            <img src="894.jpg" style="width: 300px;float: left;margin: auto;">
+            <p>物语系列真tm好看</p>
+        </div>
+        <div class="container" style="float: left;">
+            <img src="894.jpg" style="width: 300px;float: left;margin: auto;">
+            <p>物语系列真tm好看</p>
+        </div>
+        <div class="container" style="float: left;">
+            <img src="894.jpg" style="width: 300px;float: left;margin: auto;">
+            <p>物语系列真tm好看</p>
+        </div>
+    </div>
+
+    <p class="tips" style="clear: both">待处理事项</p>
+    <p class="tips" style="clear: both">待处理事项</p>
+    <p class="tips" style="clear: both">待处理事项</p>
+    <p class="tips" style="clear: both">待处理事项</p>
+    <p class="tips" style="clear: both">待处理事项</p>
+    <p class="tips" style="clear: both">待处理事项</p>
+
+    <canvas id="test"></canvas>
+
+    <script type="application/javascript">
+        var c = document.getElementById("test");
+        var ctx = c.getContext('2d');
+        ctx.fillStyle = "rgb(0,0,0)";
+        var scl = 1;
+        var xNum = Math.floor(c.width / scl);
+        var yNum = Math.floor(c.height / scl);
+        for (let i = 0; i < xNum; i++)
+            for (let j = 0; j < yNum; j++) {
+                if (i * j % 11 == 0)
+                    ctx.fillRect(i * scl, j * scl, scl, scl);
+            }
+    </script>
+
+</body>
+</html>
